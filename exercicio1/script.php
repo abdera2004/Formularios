@@ -10,12 +10,18 @@
         $Nome = $_POST['Nome'];
         $Email = $_POST['Email'];
         $Idade = $_POST['Idade'];
-        $Nome = $_POST['nome'];
+        $UF = $_POST['UF'];
         $Senha = $_POST['Senha'];
         $Sexo = $_POST['Sexo'];
-        $Interesses = $_POST['1'];
-        $Interesses = $_POST['2'];
-        $Interesses = $_POST['3'];
+        
+        echo "<h2>Informações Digitadas:</h2>";
+        echo "<p><strong>Nome:</strong> $Nome</p>";
+        echo "<p><strong>Email:</strong> $Email</p>";
+        echo "<p><strong>Idade:</strong> $Idade</p>";
+        echo "<p><strong>UF:</strong> $UF</p>";
+        echo "<p><strong>Senha:</strong> $Senha</p>";
+        echo "<p><strong>Sexo:</strong> $Sexo</p>";
+
     ?>
 </body>
 </html>

@@ -23,9 +23,9 @@
                 <input type="radio" name="Sexo" value="Masculino"> Masculino<br>
                 <input type="radio" name="Sexo" value="Feminino"> Feminino<br>
                 <b>Interesses:</b><br>
-                <input type="checkbox" name="Interesses" value="1">Futebol<br>
-                <input type="checkbox" name="Interesses" value="2">Cursos<br>
-                <input type="checkbox" name="Interesses" value="1">Moda<br>
+                <input type="checkbox" name="Interesses[]" value="Futebol">Futebol<br>
+                <input type="checkbox" name="Interesses[]" value="Cursos">Cursos<br>
+                <input type="checkbox" name="Interesses[]" value="Moda">Moda<br>
                 <b>Unidade federativa:</b><br>
                 <select name="UF" class="border-black border-2 rounded">
                     <option></option>
@@ -58,7 +58,7 @@
                     <option>TO</option>
                 </select><br>
                 <b>Observações:</b><br>
-                <textarea class="border-black border-2 rounded" style="width: 200px">
+                <textarea class="border-black border-2 rounded" style="width: 200px" >
 
                 </textarea><br>
                 <input id="botao" type="submit" name="Cadastrar" class="border-black border-1 rounded property-bottom col-12">
