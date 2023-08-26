@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../exercicio1/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div id="principiodavida" >
+        <div id="preensado"class="d-flex position-absolute top-50 start-50 translate-middle border border-4 border border-black p-4 justify-content-center rounded">
+            <form action="script.php" method="post">
+                <h1>Cadastro</h1>
+                <b>Nome:</b><br>
+                <input type="text" name="Nome" class="border-black border-2 rounded"><br>
+                <b>Email:</b><br>
+                <input type="email" name="Email" class="border-black border-2 rounded"><br>
+                <b>Idade:</b><br>
+                <input type="number" name="Idade" class="border-black border-2 rounded"><br>
+                <b>Senha:</b><br>
+                <input type="password" name="Senha" class="border-black border-2 rounded"><br>
+                <b>Sexo:</b><br>
+                <input type="radio" name="Sexo" value="Masculino"> Masculino<br>
+                <input type="radio" name="Sexo" value="Feminino"> Feminino<br>
+                <b>Interesses:</b><br>
+                <input type="checkbox" name="Interesses" value="1">Futebol<br>
+                <input type="checkbox" name="Interesses" value="2">Cursos<br>
+                <input type="checkbox" name="Interesses" value="1">Moda<br>
+                <b>Unidade federativa:</b><br>
+                <select name="UF" class="border-black border-2 rounded">
+                    <option></option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select><br>
+                <b>Observações:</b><br>
+                <textarea class="border-black border-2 rounded" style="width: 200px">
+
+                </textarea><br>
+                <input id="botao" type="submit" name="Cadastrar" class="border-black border-1 rounded property-bottom col-12">
+            </form>
+    </div>
+    </div>
+    
+<style>   
+
+    #principiodavida{
+        height: 100vh;
+    }
+    #preensado{
+        background-color: #df2424; 
+        color: white;
+    }
+    #botao{
+        color: white;
+        background-color: rgb(107, 175, 231);
+    }
+    h1{
+        color: rgb(255, 255, 255);
+    }
+</style> 
+</body>
+</html>
