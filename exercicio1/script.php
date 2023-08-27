@@ -24,11 +24,11 @@
         echo "<p><strong>UF:</strong> $uf</p>";
         echo "<p><strong>Senha:</strong> $senha</p>";
         echo "<p><strong>Sexo:</strong> $sexo</p>";
-        if(isset($_POST["Interesses"]))
+        if(isset($_POST["interesses"]))
             {
                 echo "<strong>Os seus interesses são:</strong><BR>";
 
-                foreach($_POST["Interesses"] as $interesses)
+                foreach($_POST["interesses"] as $interesses)
                 {
                     echo "- " . $interesses . "<BR>";
                 }
