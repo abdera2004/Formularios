@@ -14,12 +14,15 @@
 
     if($lado1>$lado2+$lado3){
         echo "Triângulo inválido";
+        exit;
     }
     elseif($lado2>$lado1+$lado3){
         echo "Triângulo inválido";
+        exit;
     }
     elseif($lado3>$lado1+$lado2){
         echo "Triângulo inválido";
+        exit;
     }
 
     if($lado1==$lado2 && $lado2==$lado3) {
