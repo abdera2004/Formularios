@@ -9,35 +9,35 @@
 <body>
 <div id="principal" class="p-3 position-absolute top-0 start-50 translate-middle-x border border-2 border-black">
     <?php
-        $Nome = $_POST['Nome'];
-        $Email = $_POST['Email'];
-        $Idade = $_POST['Idade'];
-        $UF = $_POST['UF'];
-        $Senha = $_POST['Senha'];
-        $Sexo = $_POST['Sexo'];
-        $Mensagem = $_POST['Mensagem'];
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $idade = $_POST['idade'];
+        $uf = $_POST['uf'];
+        $senha = $_POST['senha'];
+        $sexo = $_POST['sexo'];
+        $mensagem = $_POST['mensagem'];
         
         echo "<h2>Informações Digitadas</h2>";
-        echo "<p><strong>Nome:</strong> $Nome</p>";
-        echo "<p><strong>Email:</strong> $Email</p>";
-        echo "<p><strong>Idade:</strong> $Idade</p>";
-        echo "<p><strong>UF:</strong> $UF</p>";
-        echo "<p><strong>Senha:</strong> $Senha</p>";
-        echo "<p><strong>Sexo:</strong> $Sexo</p>";
+        echo "<p><strong>Nome:</strong> $nome</p>";
+        echo "<p><strong>Email:</strong> $email</p>";
+        echo "<p><strong>Idade:</strong> $idade</p>";
+        echo "<p><strong>UF:</strong> $uf</p>";
+        echo "<p><strong>Senha:</strong> $senha</p>";
+        echo "<p><strong>Sexo:</strong> $sexo</p>";
         if(isset($_POST["Interesses"]))
             {
                 echo "<strong>Os seus interesses são:</strong><BR>";
 
-                foreach($_POST["Interesses"] as $Interesses)
+                foreach($_POST["Interesses"] as $interesses)
                 {
-                    echo "- " . $Interesses . "<BR>";
+                    echo "- " . $interesses . "<BR>";
                 }
             }
             else
             {
                 echo "<p><strong>Você não escolheu nenhum interesse!</strong></p>";
             }
-        echo "<strong>Sua mensagem: </strong>" . $Mensagem;
+        echo "<strong>Sua mensagem: </strong>" . $mensagem;
     ?>
 </div>
 
