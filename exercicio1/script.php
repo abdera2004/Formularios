@@ -44,7 +44,7 @@
 <style>
 
 body{
-    background-color: rgb(56, 55, 55);
+    background-color: #659DBD;
 }
 #principal{
         height: 100vh;

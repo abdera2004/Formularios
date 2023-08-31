@@ -14,10 +14,11 @@
 
             <form action="script.php" method="post">
                 
-                <h1>Cadastro</h1>
-                <b>Peso:</b><br>
+                <center><h1>Cadastro</h1></center>
+                <hr class="opacity-100"> 
+                <b>Peso (kg):</b><br>
                 <input type="number" step="0.01" name="peso" class="border-black border-2 rounded"><br>
-                <b>Altura:</b><br>
+                <b>Altura (cm):</b><br>
                 <input type="number" step="0.01" name="altura" class="border-black border-2 rounded"><br>
                 <br>
                 <input id="botao" type="submit" name="Cadastrar" class="border-black border-1 rounded property-bottom col-12">
@@ -27,7 +28,25 @@
         </div>
 
     </div>
-    
 
+<style>
+#principiodavida{
+    height: 100vh;
+}
+#preensado{
+    background-color: #df2424; 
+    color: white;
+}
+#botao{
+    color: white;
+    background-color: rgb(34, 137, 221);
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+body{
+    background-color: #659DBD;
+}
+</style>
 </body>
 </html>
