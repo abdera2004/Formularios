@@ -6,7 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Triangulo</title>
 </head>
-<body class="position-absolute justify-content-center start-50 top-50 translate-middle d-flex">
+<body class="">
+    <div class="position-absolute justify-content-center start-50 top-50 translate-middle d-flex border border-1 border-black">
     <?php
     $lado1 = $_POST['medida1'];
     $lado2 = $_POST['medida2'];
@@ -24,16 +25,25 @@
         echo "Triângulo inválido";
         exit;
     }
-
+    ?>
+    <?php
     if($lado1==$lado2 && $lado2==$lado3) {
         echo "Triângulo equilátero";
-    } 
-    else if ($lado1!=$lado2 && $lado2!=$lado3) { 
+            
+    ?>
+    <img src="<?php echo "../imagens/triangulo-equilatero-8.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
+    
+    <?php
+    }else if ($lado1!=$lado2 && $lado2!=$lado3) { 
         echo "Triângulo escaleno";
-    } 
-    else {
+    
+    ?>
+    
+    <?php
+    }else {
         echo "Triângulo isósceles";
     }
     ?>
+    </div>
 </body>
 </html>
