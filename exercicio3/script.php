@@ -7,43 +7,58 @@
     <title>Triangulo</title>
 </head>
 <body class="">
-    <div class="position-absolute justify-content-center start-50 top-50 translate-middle d-flex border border-1 border-black">
-    <?php
-    $lado1 = $_POST['medida1'];
-    $lado2 = $_POST['medida2'];
-    $lado3 = $_POST['medida3'];
+    <div class="position-absolute justify-content-center start-50 top-50 translate-middle d-flex">
+        <?php
+        $lado1 = $_POST['medida1'];
+        $lado2 = $_POST['medida2'];
+        $lado3 = $_POST['medida3'];
 
-    if($lado1>$lado2+$lado3){
-        echo "Triângulo inválido";
-        exit;
-    }
-    elseif($lado2>$lado1+$lado3){
-        echo "Triângulo inválido";
-        exit;
-    }
-    elseif($lado3>$lado1+$lado2){
-        echo "Triângulo inválido";
-        exit;
-    }
-    ?>
-    <?php
-    if($lado1==$lado2 && $lado2==$lado3) {
-        echo "Triângulo equilátero";
+        if($lado1>$lado2+$lado3){
+            echo "Triângulo inválido";
+            exit;
+        }
+        elseif($lado2>$lado1+$lado3){
+            echo "Triângulo inválido";
+            exit;
+        }
+        elseif($lado3>$lado1+$lado2){
+            echo "Triângulo inválido";
+            exit;
+        }
+        ?>
+        <?php
+        if($lado1==$lado2 && $lado2==$lado3) {
             
-    ?>
-    <img src="<?php echo "../imagens/triangulo-equilatero-8.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
-    
-    <?php
-    }else if ($lado1!=$lado2 && $lado2!=$lado3) { 
-        echo "Triângulo escaleno";
-    
-    ?>
-    
-    <?php
-    }else {
-        echo "Triângulo isósceles";
-    }
-    ?>
+                
+        ?>
+        
+        <?php
+        echo "<B>Triângulo equilátero</B>";
+        
+        ?>
+        <img src="<?php echo "../imagens/triangulo-equilatero-8.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
+        
+        <?php
+        }else if ($lado1!=$lado2 && $lado2!=$lado3) { 
+            echo "<B>Triângulo escaleno</B>";
+        
+        ?>
+        <img src="<?php echo "../imagens/triangulo-escaleno.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
+
+        <?php
+        }else {
+            echo "<B>Triângulo isósceles</B>";
+        }
+        ?>
+        <img src="<?php echo "../imagens/triangulo-isosceles.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
     </div>
+
+<style>
+    body{
+        background-color: #659DBD;
+    }
+    
+</style>
+
 </body>
 </html>
