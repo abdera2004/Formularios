@@ -10,7 +10,7 @@
 <body>
     
     <div id="principiodavida">
-        <div class="position-absolute justify-content-center start-50 top-50 translate-middle d-flex">
+        <div class="d-flex position-absolute justify-content-center start-50 top-50 translate-middle ">
         <?php
         $peso = $_POST['peso'];
         $altura = $_POST['altura'];
@@ -54,6 +54,8 @@
         }
         ?>
         <img src="<?php echo "../imagens/taiscarla.png" ?>" alt="Minha Imagem" style="height: 150px;" class="position-absolute top-100 start-50 translate-middle-x">
+
+
     </div>
          
         
