@@ -28,8 +28,7 @@
         ?>
         <?php
         if($lado1==$lado2 && $lado2==$lado3) {
-            
-                
+                  
         ?>
         
         <?php
@@ -39,7 +38,7 @@
         <img src="<?php echo "../imagens/triangulo-equilatero-8.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
         
         <?php
-        }else if ($lado1!=$lado2 && $lado2!=$lado3) { 
+        }else if ($lado1!=$lado2 && $lado2!=$lado3 && $lado1!=$lado3) { 
             echo "<B>Triângulo escaleno</B>";
         
         ?>
@@ -48,9 +47,13 @@
         <?php
         }else {
             echo "<B>Triângulo isósceles</B>";
-        }
+        
         ?>
         <img src="<?php echo "../imagens/triangulo-isosceles.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
+        
+        <?php
+        }
+        ?>
     </div>
 
 <style>
