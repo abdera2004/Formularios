@@ -17,15 +17,15 @@
         $imc = $peso / ($altura ** 2);
 
         if($imc< 16.9){
-            echo "TU VAI MORRE LEK MT MAGRO FILHO";
+            echo "<b>TU VAI MORRE LEK MT MAGRO FILHO</b>";
             exit;
         }
         elseif($imc >= 17 && $imc <= 18.4){
-            echo "temq dar uma engordadinha em amigao";
+            echo "<b>temq dar uma engordadinha em amigao</b>";
             exit;
         }
         elseif($imc >= 18.5 && $imc <=24.9){
-            echo "ta bem po, nem engorda nem emagrece q ta mec";
+            echo "<b>ta bem po, nem engorda nem emagrece q ta mec</b>";
             exit;
         }
         elseif($imc >= 25 && $imc <= 29.9){
@@ -33,48 +33,19 @@
             exit;
         }
         elseif($imc >= 30 && $imc <= 34.9){
-            echo "ta gordao em vamo querer emagrecer";
+            echo "<b>ta gordao em vamo querer emagrecer</b>";
             exit;
         }
         elseif($imc >= 35 && $imc <= 40){
-            echo "o amigao tu vai morrer se continuar assim";
+            echo "<b>o amigao tu vai morrer se continuar assim</b>";
             exit;
         }
-        else{
-            echo "AMIGAO AQUI NÃO É LUGAR PRA FAZER COSPLAY DE TAIS CARLA NAO PARA AE";
-            exit;
-        }
+        
         ?>
         <?php
         if($imc< 16.9) {
             
                 
-        ?>
-        
-        <?php
-        echo "<B>TU VAI MORRE LEK MT MAGRO FILHO</B>";
-        
-        ?>
-        
-        <?php
-        }else if ($imc >= 17 && $imc <= 18.4) { 
-            echo "<B>temq dar uma engordadinha em amigao</B>";
-        
-        ?>
-        <?php
-        }else if ($imc >= 25 && $imc <= 29.9) { 
-            echo "<B>ta meio gordinho em mas ta mec</B>";
-        
-        ?>
-        <?php
-        }else if ($imc >= 30 && $imc <= 34.9) { 
-            echo "<B>ta gordao em vamo querer emagrecer</B>";
-        
-        ?>
-        <?php
-        }else if ($imc >= 35 && $imc <= 40) { 
-            echo "<B>o amigao tu vai morrer se continuar assim</B>";
-        
         ?>
 
         <?php
@@ -82,7 +53,7 @@
             echo "<B>AMIGAO AQUI NÃO É LUGAR PRA FAZER COSPLAY DE TAIS CARLA NAO PARA AE</B>";
         }
         ?>
-        <img src="<?php echo "../imagens/taiscarla.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
+        <img src="<?php echo "../imagens/taiscarla.png" ?>" alt="Minha Imagem" style="height: 150px;" class="position-absolute top-100 start-50 translate-middle-x">
     </div>
          
         
