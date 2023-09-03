@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Triangulo</title>
 </head>
-<body class="">
+<body>
     <div class="position-absolute justify-content-center start-50 top-50 translate-middle d-flex">
         <?php
         $lado1 = $_POST['medida1'];
@@ -14,15 +14,15 @@
         $lado3 = $_POST['medida3'];
 
         if($lado1>$lado2+$lado3){
-            echo "Triângulo inválido";
+            echo "<B>Não é possível criar um triângulo com essas medidas!</B>";
             exit;
         }
         elseif($lado2>$lado1+$lado3){
-            echo "Triângulo inválido";
+            echo "<B>Não é possível criar um triângulo com essas medidas!</B>";
             exit;
         }
         elseif($lado3>$lado1+$lado2){
-            echo "Triângulo inválido";
+            echo "<B>Não é possível criar um triângulo com essas medidas!</B>";
             exit;
         }
         ?>
@@ -35,7 +35,7 @@
         echo "<B>Triângulo equilátero</B>";
         
         ?>
-        <img src="<?php echo "../imagens/triangulo-equilatero-8.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
+        <img src="<?php echo "../imagens/triangulo-equilatero.png" ?>" alt="Minha Imagem" style="height: 100px;" class="position-absolute top-100 start-50 translate-middle-x">
         
         <?php
         }else if ($lado1!=$lado2 && $lado2!=$lado3 && $lado1!=$lado3) { 
@@ -60,7 +60,6 @@
     body{
         background-color: #659DBD;
     }
-    
 </style>
 
 </body>
