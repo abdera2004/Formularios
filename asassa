@@ -1,0 +1,25 @@
+<?php
+            
+            $peso = $_POST['peso'];
+            $altura = $_POST['altura'];
+            $imc = $peso / ($altura ** 2);
+
+            if ($imc< 16.9) {
+              echo 'TU VAI MORRE LEK MT MAGRO FILHO';
+            } else if ($imc >= 17 && $imc <= 18.4){
+              echo 'temq dar uma engordadinha em amigao';
+            } else if ($imc >= 18.5 && $imc <=24.9){
+              echo 'ta bem po, nem engorda nem emagrece q ta mec';
+            } else if ($imc >= 25 && $imc <= 29.9){
+              echo 'ta meio gordinho em mas ta mec';
+            } else if ($imc >= 30 && $imc <= 34.9){
+              echo 'ta gordao em vamo querer emagrecer';
+            } else if ($imc >= 35 && $imc <= 40){
+              echo 'o amigao tu vai morrer se continuar assim';
+            } else{
+              echo 'AMIGAO AQUI NÃO É LUGAR PRA FAZER COSPLAY DE TAIS CARLA NAO PARA AE', "<img src='../imagens/taiscarla.png' class='position-relative bottom-0 end-0' height='100'>";
+            }
+           
+            
+
+          ?>
