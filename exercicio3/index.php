@@ -6,15 +6,15 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Triangulo</title>
 </head>
-<body>
-    <nav class="navbar" style="background-color: #e3f2fd;">
-        <div class="container-md">
-            <a class="navbar-brand" href="../exercicio1/index.html">Formulario</a>
-            <a class="navbar-brand" href="../exercicio2/index.html">Tabuada</a>
-            <a class="navbar-brand" href="../exercicio5/index.html">Imc</a>
-          </div>
 
-      </nav>
+<?php
+
+include('./../componentes/cabecalho.php');
+
+?>
+
+<body>
+
     <div id="preensado" class="position-absolute border border-4 border border-black justify-content-center start-50 top-50 translate-middle d-flex p-3 rounded shadow">
         <form action="script.php" method="post">
             <center><h1>Triângulo</h1></center>

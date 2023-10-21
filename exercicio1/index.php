@@ -7,18 +7,17 @@
     <title>Formulário</title>
 </head>
 <body>
-    
-    <div id="principiodavida">
-    <nav class="navbar" style="background-color: #e3f2fd;">
-        <div class="container-md">
-            <a class="navbar-brand" href="../exercicio2/index.html">Tabuada</a>
-            <a class="navbar-brand" href="../exercicio3/index.html">Triangulo</a>
-            <a class="navbar-brand" href="../exercicio5/index.html">Imc</a>
-          </div>
 
-      </nav>
+        <?php
+
+            include('./../componentes/cabecalho.php');
+
+        ?>
+
+<div id="principiodavida">
+
     <div id="preensado"class="d-flex position-absolute top-50 start-50 translate-middle border border-4 border border-black p-4 justify-content-center rounded">
-            
+         
         <form action="script.php" method="post">
                 <center><h1>Cadastro</h1></center>
                 <hr class="opacity-100"> 
@@ -73,8 +72,8 @@
 
                 <input id="botao" type="submit" name="cadastrar" class="border-black border-1 rounded property-bottom col-12">
             </form>
-        </div>
     </div>
+</div>
 <style>   
 
     body{
