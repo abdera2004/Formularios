@@ -86,8 +86,9 @@ include('./../componentes/rodape.php');
 <style>   
 
     body{
-        
-        background-color: #659DBD;
+        background-image: url("../imagens/fundo3d.png");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     #principiodavida{
         height: 100vh;
