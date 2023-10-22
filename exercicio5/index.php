@@ -17,7 +17,7 @@ include('./../componentes/cabecalho.php');
 
     <div id="principiodavida" >
 
-        <div id="preensado" class="d-flex position-absolute top-50 start-50 translate-middle border border-2 border border-black p-5  justify-content-center rounded">
+        <div id="preensado" class="d-flex position-absolute top-50 start-50 translate-middle border border-4 border border-black p-4 justify-content-center rounded">
 
             <form action="script.php" method="post">
                 
@@ -36,5 +36,38 @@ include('./../componentes/cabecalho.php');
 
     </div>
 
+<?php
+
+include('./../componentes/rodape.php');
+
+?>
+
 </body>
+
+<style>
+
+#principiodavida{
+    height: 100vh;
+}
+body{ 
+    background-color: #659DBD;
+}
+#preensado{
+    background-color: rgb(9, 163, 60);
+}
+hr{
+    border-color: rgb(0, 0, 0);
+}
+.l{
+    margin-bottom: 0.5cm;
+}
+b{
+    font-family: Arial;
+}
+#botao{
+    background-color: rgb(24, 77, 223);
+    color: white;
+}
+</style>
+
 </html>

@@ -7,6 +7,14 @@
     <title>Triangulo</title>
 </head>
 <body>
+
+<?php
+
+include('./../componentes/cabecalho.php');
+
+?>
+
+<div id="principiodavida">
     <div class="position-absolute justify-content-center start-50 top-50 translate-middle d-flex">
         <?php
         $lado1 = $_POST['medida1'];
@@ -55,12 +63,23 @@
         }
         ?>
     </div>
+</div>
+<?php
 
-<style>
-    body{
-        background-color: #659DBD;
-    }
-</style>
+include('./../componentes/rodape.php');
+
+?>
 
 </body>
+
+<style>
+
+body{
+    background-color: #659DBD;
+}
+#principiodavida{
+    height: 100vh;
+}
+</style>
+
 </html>

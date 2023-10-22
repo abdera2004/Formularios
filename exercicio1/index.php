@@ -74,6 +74,15 @@
             </form>
     </div>
 </div>
+
+
+<?php
+
+include('./../componentes/rodape.php');
+
+?>
+
+</body>
 <style>   
 
     body{
@@ -87,6 +96,7 @@
     #preensado{
         background-color: #4e4a4a; 
         color: white;
+        margin-top: 3cm;
     }
     #botao{
         color: white;
@@ -95,6 +105,5 @@
     h1{
         color: rgb(255, 255, 255);
     }
-</style> 
-</body>
+</style>
 </html>

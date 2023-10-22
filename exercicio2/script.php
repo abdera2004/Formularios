@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+
+<?php
+
+include('./../componentes/cabecalho.php');
+
+?>
+<div id="principiodavida">
     <div id="principal" class="translate-middle start-50 top-50 justify-content-center position-absolute border border-1 p-3 border border-black rounded">
         <center><h5>Tabuada</h5></center>
         <hr class="opacity-100"> 
@@ -21,8 +28,19 @@
 
     ?>
     </div>
+</div>
+<?php
+
+include('./../componentes/rodape.php');
+
+?>
+
+</body>
 
 <style>
+#principiodavida{
+        height: 100vh;
+    }
     #principal {
         background-color: black;
         color: white;
@@ -31,5 +49,5 @@
         background-color: #659DBD;
     }
 </style>
-</body>
+
 </html>

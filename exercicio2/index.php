@@ -15,7 +15,7 @@ include('./../componentes/cabecalho.php');
 
 ?>
 
-    <div id="principiodavida" >
+    <div id="principiodavida">
 
         <div id="preensado"class="d-flex position-absolute top-50 start-50 translate-middle border border-4 border border-black p-4 justify-content-center rounded">
 
@@ -26,7 +26,6 @@ include('./../componentes/cabecalho.php');
                 <b>Numero:</b><br>
                 <input type="number"  name="numero" class="border-black border-2 rounded"><br><br>
                 
-                
                 <input id="botao" type="submit" name="Cadastrar" class="border-black border-1 rounded property-bottom col-12">
            
             </form>
@@ -34,6 +33,14 @@ include('./../componentes/cabecalho.php');
         </div>
 
     </div>
+ 
+<?php
+
+include('./../componentes/rodape.php');
+
+?>
+    
+</body>
 <style>
     #principiodavida{
         height: 100vh;
@@ -52,6 +59,5 @@ include('./../componentes/cabecalho.php');
     body{
         background-color: #659DBD;
     }
-</style>    
-</body>
+</style>   
 </html>
